@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.content-one-section {
+ margin: 2% 3%;
+}
+.sidebar-items-two {
+ display: flex;
+ align-items: center;
+}
+
+.image-carousel {
+ display: flex;
+ align-items: center;
+ list-style: none;
+}
+
+.image-carousel li img {
+ width: 300px;
+ height: auto;
+ margin-right: 1rem;
+}
+
+.heading {
+ font-size: 28px;
+}
+
+@media only screen and (max-width: 700px) {
+ .responsive-table-one {
+  display: flex;
+  flex-direction: column;
+ }
+ .heading {
+  font-size: 16px;
+ }
+ .more ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .more ul li a {
+  font-size: 12px;
+ }
+ .image-carousel {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .image-carousel li img {
+  width: 280px;
+  border-radius: 10px;
+ }
+ .image-carousel .fas {
+  display: none;
+ }
+ .about-tech {
+  display: flex;
+  flex-direction: column;
+ }
+ .img-2 {
+  margin-left: 15px;
+ }
+}

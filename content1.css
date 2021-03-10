@@ -1,0 +1,94 @@
+.content-one-section {
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+}
+
+.description-two {
+ padding: 1% 2%;
+ width: 600px;
+}
+
+.heading-two {
+ font-family: 'Ubuntu', sans-serif;
+ margin: 3% auto;
+ font-size: 32px;
+ color: #aa2b1d;
+}
+
+.image-p {
+ font-family: 'Raleway', sans-serif;
+ text-align: justify;
+}
+
+.image-p img {
+ width: 350px;
+ height: auto;
+ float: left;
+ margin-right: 3%;
+}
+
+.remaining {
+ font-family: 'Raleway', sans-serif;
+ padding: 1% 2%;
+ width: 600px;
+ text-align: justify;
+}
+
+.more {
+ margin-bottom: 7%;
+}
+
+.more .heading {
+ font-size: 24px;
+}
+
+.sidebar-items img {
+ width: 70px;
+ margin-right: 10px;
+}
+
+.sidebar-items {
+ display: flex;
+ align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+ .responsive-1 {
+  display: flex;
+  flex-direction: column;
+ }
+ .more .heading {
+  font-size: 18px;
+ }
+ .image-p {
+  width: 340px;
+ }
+ .image-p img {
+  float: none;
+  width: 340px;
+ }
+ .description-two {
+  width: 330px;
+ }
+ .heading-two {
+  font-size: 18px;
+ }
+ .more {
+  overflow-x: hidden;
+ }
+ .more .heading {
+  text-align: center;
+ }
+ .more ul {
+  width: 350px;
+  margin: 0;
+  padding: 0 !important;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+ }
+ .food-blog-links {
+  width: 350px;
+ }
+}

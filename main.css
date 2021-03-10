@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #3f0d12;
+	background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+	color: #fff;
+	padding: 3% 5%;
+}
+
+header > h1 {
+ text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+}
+
+header > h3 {
+ text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Navbar Styling */
+.nav {
+ height: 50px;
+ width: 100%;
+ background-color: #bd2000;
+ position: relative;
+ font-family: 'Raleway', sans-serif;
+}
+
+.nav > .nav-header {
+ display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+ display: inline-block;
+ font-size: 22px;
+ color: #fff;
+ padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+ display: none;
+}
+
+.nav > .nav-links {
+ display: inline;
+ float: right;
+ font-size: 18px;
+}
+
+.nav > .nav-links > a {
+ display: inline-block;
+ padding: 13px 10px 13px 10px;
+ text-decoration: none;
+ color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+ display: none;
+}
+
+@media (max-width:600px) {
+ .nav > .nav-btn {
+   display: inline-block;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+ }
+ .nav > .nav-btn > label {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   padding: 13px;
+ }
+ .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+   background-color: rgba(0, 0, 0, 0.3);
+ }
+ .nav > .nav-btn > label > span {
+   display: block;
+   width: 25px;
+   height: 10px;
+   border-top: 2px solid #eee;
+ }
+ .nav > .nav-links {
+   position: absolute;
+   display: block;
+   width: 100%;
+   background-color: #3f0d12;
+   height: 0px;
+   transition: all 0.3s ease-in;
+   overflow-y: hidden;
+   top: 50px;
+   left: 0px;
+ }
+ .nav > .nav-links > a {
+   display: block;
+   width: 100%;
+ }
+ .nav > #nav-check:not(:checked) ~ .nav-links {
+   height: 0px;
+ }
+ .nav > #nav-check:checked ~ .nav-links {
+   height: calc(100vh - 50px);
+   overflow-y: auto;
+ }
+}
+
+/* Main Content Styling */
+#main-content {
+ display: flex;
+ flex-direction: row;
+ z-index: -1;
+}
+
+#main-content div:nth-of-type(1) {
+	flex-grow: 2;
+}
+
+#main-content div:nth-of-type(2) {
+	flex-grow: 1;
+}
+
+.description {
+ /* background-color: #ABABAB; */
+ padding: 1% 7%;
+ width: 600px;
+}
+
+.heading {
+ font-family: 'Ubuntu', sans-serif;
+ margin: 3% auto;
+ font-size: 32px;
+ color: #aa2b1d;
+}
+
+.description p {
+ font-family: 'Raleway', sans-serif;
+}
+
+.description p img {
+ width: 350px;
+ height: auto;
+ float: left;
+ margin-right: 3%;
+ border-radius: 10px;
+}
+
+.more {
+ padding: 2% 5%;
+}
+
+.more ul{
+ padding-left: 10%;
+ list-style-type: square;
+ line-height: 1em;
+}
+
+.more ul li {
+ margin-bottom: 0.4em;
+ font-family: 'Ubuntu', sans-serif;
+ font-weight: 800;
+}
+
+.more ul li a {
+ color: #ef8d32;
+}
+
+.more ul li a:hover {
+ color: #440a67;
+}
+@media only screen and (max-width: 700px) {
+ #main-content {
+  flex-direction: column;
+ }
+ .description {
+  width: fit-content;
+ }
+ .heading {
+  text-align: center;
+  font-size: 20px;
+ }
+ .more ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .description p {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+ }
+ .description p img {
+  float: none;
+  width: 300px;
+ }
+}
+
+/* Footer Styling */
+footer {
+ background-color: #3f0d12;
+	background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+	color: #fff;
+ font-family: 'Ubuntu', sans-serif;
+ padding: 1.5% 7% 2%;
+}
+
+footer h3 {
+ text-align: center;
+}
+
+.social {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 1rem;
+}
