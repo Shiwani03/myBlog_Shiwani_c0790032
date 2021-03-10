@@ -206,7 +206,46 @@ header > h3 {
   width: 300px;
  }
 }
+.homeTable {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(207, 65, 29);
+}
 
+.homeTable table {
+  width: 50%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.homeTable table th {
+  text-align: start;
+  border: 2px solid black;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(172, 11, 11, 0.438);
+}
+
+.homeTable table td {
+  padding: 0.7rem;
+  text-align: start;
+  border: 2px solid black;
+}
+
+.homeTable table tr:nth-child(odd) {
+  background-color: rgba(150, 33, 33, 0.315);
+}
+
+.homeTable table tr:nth-child(even) {
+  background-color: rgba(199, 56, 56, 0.178);
+}
 /* Footer Styling */
 footer {
  background-color: #3f0d12;
